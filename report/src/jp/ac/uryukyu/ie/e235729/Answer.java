@@ -3,7 +3,7 @@ package jp.ac.uryukyu.ie.e235729;
 import java.util.Random;
 //答えを作成する関数の用意
 public class Answer {
-    private int[] answer;
+    public int[] answer;
     public Answer(){
         answer = new int[3];
         Random rnd = new Random();
@@ -24,6 +24,10 @@ public class Answer {
 
     public int[] getAnswer() {
         return answer;
+    }
+    @Override
+    public String toString() {
+        return String.format("%d%d%d", answer[0], answer[1], answer[2]);
     }
 }
 
