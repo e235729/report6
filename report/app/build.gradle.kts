@@ -9,7 +9,9 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
 }
-
+java {                                      
+    sourceCompatibility = JavaVersion.VERSION_17
+}
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -23,6 +25,7 @@ dependencies {
 
     // This dependency is used by the application.
     implementation("com.google.guava:guava:32.1.1-jre")
+        
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -34,10 +37,17 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass.set("jp.ac.uryukyu.ie.e235729.App")
+    mainClass.set("Main")
 }
 
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = "Main"
+    }
+}
+
+
