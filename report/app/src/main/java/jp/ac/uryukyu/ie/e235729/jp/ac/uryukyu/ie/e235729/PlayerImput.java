@@ -2,7 +2,7 @@ package jp.ac.uryukyu.ie.e235729;
 
 import java.util.Scanner;
 
-class PlayerInput  {
+class PlayerImput  {
     public int[] getPlayerInput(int count) {
         int[] playerNum = new int[3];
         CheckNum checkNum = new CheckNum();

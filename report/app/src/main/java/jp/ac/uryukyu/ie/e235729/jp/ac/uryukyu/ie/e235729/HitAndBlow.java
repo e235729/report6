@@ -10,12 +10,12 @@ public class HitAndBlow {
 class Game {
     private Rule rule;
     private AnswerGenerator answerGenerator;
-    private PlayerInput playerInput;
+    private PlayerImput playerInput;
 
     public Game() {
         rule = new Rule();
         answerGenerator = new AnswerGenerator();
-        playerInput = new PlayerInput();
+        playerInput = new PlayerImput();
     }
 
     public void playGame() {
