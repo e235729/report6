@@ -1,8 +1,17 @@
 package jp.ac.uryukyu.ie.e235729;
 
 import java.util.Scanner;
+/**
+ * プレイヤーの入力を管理するクラスです。
+ */
 
 class PlayerImput  {
+        /**
+     * プレイヤーからの入力を受け付けるメソッドです。
+     *
+     * @param count 入力の回数
+     * @return プレイヤーの回答の数字配列
+     */
     public int[] getPlayerInput(int count) {
         int[] playerNum = new int[3];
         CheckNum checkNum = new CheckNum();
