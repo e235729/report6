@@ -23,7 +23,6 @@ class Game {
         rule.displayRules();
 
         int[] answer = answerGenerator.generateAnswer();
-        rule.displayAnswer(answer);
 
         int count = 1;
         int[] playerNum;

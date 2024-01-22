@@ -9,12 +9,6 @@ class Rule {
         System.out.println(rules);
     }
 
-    //テスト用
-    public void displayAnswer(int[] answer) {
-        System.out.println(answer[0]);
-        System.out.println(answer[1]);
-        System.out.println(answer[2]);
-    }
 
     public boolean checkAnswer(int[] playerNum, int[] answer) {
         return playerNum[0] == answer[0] && playerNum[1] == answer[1] && playerNum[2] == answer[2];
